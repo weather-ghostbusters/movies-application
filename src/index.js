@@ -1,5 +1,10 @@
 const $ = require("jquery");
 
+var TheMovieDb = require('themoviedb');
+var api = new TheMovieDb('4128a2073fea17df96a911e65892a328');
+
+
+
 /**
  * es6 modules and imports
  */
@@ -24,6 +29,8 @@ function displayMovies(data) {
         $(".delete").val(i)
     }
     $("#movie").html(html)
+    console.log(html);
+
 
     // deletes movies
     $("h1").dblclick(function () {
@@ -35,14 +42,15 @@ function displayMovies(data) {
                 id = (data[i].id)
             }
         }
-            const deleteMovie = {
-                method: "DELETE"
-            };
-            fetch("/api/movies/" + id, deleteMovie)
-            html = ""
-            getMoviesfunc() // call API Again to refresh list
+        const deleteMovie = {
+            method: "DELETE"
+        };
+        fetch("/api/movies/" + id, deleteMovie)
+        html = ""
+        getMoviesfunc() // call API Again to refresh list
     })
-    $("#edit").click(function (){
+    // edits movie rating
+    $("#edit").click(function () {
         let id = 0;
 
         let movie = {title: $("#movie-titles").val(), rating: $("#edit-rating").val()}
@@ -62,33 +70,11 @@ function displayMovies(data) {
         fetch("/api/movies/" + id, editRating)
         html = ""
         getMoviesfunc();
+
     })
     return html
 }
-
-// $("h1").click(function (){
-//     var id = 0;
-//     var newRating = prompt("Enter new rating")
-//     for (var i = 0; i < data.length; i++) {
-//         if ($(this).text().toString() === data[i].title) {
-//             id = (data[i].id)
-//             data[i].rating = newRating
-//         }
-//     }
-//     const editRating = {
-//         method: "PATCH",
-//         headers: {
-//             'Content-Type': 'application/json',
-//         },
-//         body: JSON.stringify(movie)
-//     };
-//     fetch("/api/movies/" + id, editRating)
-//     html = ""
-//     getMoviesfunc() // call API Again to refresh list
-// })
-
 // adds movie to database
-
 $("#submit").click(function () {
     let movie = {title: $("#name").val(), rating: $("#rating").val()}
     const addMovie = {
@@ -100,9 +86,11 @@ $("#submit").click(function () {
     };
     fetch("/api/movies", addMovie)
     html = ""
-    getMoviesfunc();
+    setTimeout(function(){
+        getMoviesfunc();
+    }, 2000)
+    // getMoviesfunc();
 })
-
 
 
 // calls database
@@ -118,8 +106,9 @@ function getMoviesfunc() {
         alert('Oh no! Something went wrong.\nCheck the console for details.')
         console.log(error);
     });
+    return ;
 }
-
+// adds options to select
 const select = (data) => {
     let movieOptions = "";
     for (var i = 0; i < data.length; i++) {
@@ -129,10 +118,9 @@ const select = (data) => {
 
 }
 
-
-
-
 getMoviesfunc();
+
+
 
 
 

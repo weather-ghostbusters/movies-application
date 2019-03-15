@@ -20,6 +20,7 @@
     "jquery": "^3.3.1",
     "json-server": "^0.13.0",
     "promise-polyfill": "^6.0.2",
+    "themoviedb": "^0.1.0",
     "webpack": "^3.0.0",
     "webpack-dev-server": "^2.5.0",
     "whatwg-fetch": "^2.0.3"

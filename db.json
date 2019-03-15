@@ -1,29 +1,29 @@
 {
   "movies": [
     {
-      "title": "Casablanca",
-      "rating": "4",
-      "id": 7
-    },
-    {
-      "title": "Temple of Doom",
-      "rating": "4",
-      "id": 8
-    },
-    {
-      "title": "",
-      "rating": "",
-      "id": 9
-    },
-    {
       "title": "School of Rock",
       "rating": "5",
       "id": 10
     },
     {
       "title": "The Incredibles",
-      "rating": "5",
+      "rating": "1",
       "id": 11
+    },
+    {
+      "title": "Masterminds",
+      "rating": "1",
+      "id": 12
+    },
+    {
+      "title": "Casablanca",
+      "rating": "1",
+      "id": 13
+    },
+    {
+      "title": "test",
+      "rating": "1",
+      "id": 14
     }
   ]
 }
