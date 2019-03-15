@@ -1,29 +1,9 @@
 {
   "movies": [
     {
-      "title": "Star Wars: A New Hope",
+      "title": "Star Wars",
       "rating": "5",
-      "id": 2
-    },
-    {
-      "title": "test",
-      "rating": "2",
-      "id": 3
-    },
-    {
-      "title": "test",
-      "rating": "1",
-      "id": 4
-    },
-    {
-      "title": "test",
-      "rating": "3",
-      "id": 5
-    },
-    {
-      "title": "The Notebook",
-      "rating": "5",
-      "id": 7
+      "id": 1
     }
   ]
 }
