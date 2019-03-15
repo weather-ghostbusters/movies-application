@@ -1,11 +1,6 @@
 {
   "movies": [
     {
-      "title": "Star Wars",
-      "rating": "4",
-      "id": 6
-    },
-    {
       "title": "Casablanca",
       "rating": "4",
       "id": 7
