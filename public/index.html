@@ -55,7 +55,13 @@
     <div class="row">
         <div class="col d-flex justify-content-center">
             <input id="name" type="text">
-            <input id="rating" type="text">
+            <select id="rating">
+                <option value="⭐">⭐</option>
+                <option value="⭐⭐">⭐⭐</option>
+                <option value="⭐⭐⭐">⭐⭐⭐</option>
+                <option value="⭐⭐⭐⭐">⭐⭐⭐⭐</option>
+                <option value="⭐⭐⭐⭐⭐">⭐⭐⭐⭐⭐</option>
+            </select>
             <button id="submit">Submit Review</button>
         </div>
     </div>
@@ -65,9 +71,10 @@
 
     <div class="row">
         <div class="col d-flex justify-content-center">
-            <button id="edit">Edit</button>
 
             <div id="form">
+                <select id="movie-titles">
+                </select>
                 <select id="edit-rating">
                     <option value="⭐">⭐</option>
                     <option value="⭐⭐">⭐⭐</option>
@@ -75,9 +82,7 @@
                     <option value="⭐⭐⭐⭐">⭐⭐⭐⭐</option>
                     <option value="⭐⭐⭐⭐⭐">⭐⭐⭐⭐⭐</option>
                 </select>
-
-                <select id="movie-titles">
-                </select>
+                <button id="edit">Edit</button>
             </div>
         </div>
     </div> <!-- /row -->
