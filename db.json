@@ -18,27 +18,33 @@
     {
       "title": "School of Rock",
       "rating": "5",
-      "id": 10
+      "id": 10,
+      "image": "../img/school-of-rock.jpg"
     },
     {
       "title": "The Incredibles",
       "rating": "1",
-      "id": 11
+      "id": 11,
+      "image":"../img/the-incredibles.jpg"
     },
     {
       "title": "Masterminds",
       "rating": "1",
-      "id": 12
+      "id": 12,
+      "image": "../img/masterminds.jpg"
     },
     {
       "title": "Casablanca",
       "rating": "1",
-      "id": 13
+      "id": 13,
+      "image": "../img/casablanca-movie-poster-1942-1010189508.jpg"
     },
     {
-      "title": "test",
-      "rating": "1",
-      "id": 14
+      "title": "Big Hero 6",
+      "rating":"5",
+      "id": 15,
+      "image": "../img/big-hero-6.jpeg"
+
     }
   ]
 }
