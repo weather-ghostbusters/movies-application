@@ -1,21 +1,6 @@
 {
   "movies": [
     {
-      "title": "Casablanca",
-      "rating": "5",
-      "id": 1
-    },
-    {
-      "title": "Temple of Doom",
-      "rating": "5",
-      "id": 2
-    },
-    {
-      "title": "School of Rock",
-      "rating": "5",
-      "id": 3
-    },
-    {
       "title": "School of Rock",
       "rating": "5",
       "id": 10,
@@ -25,7 +10,7 @@
       "title": "The Incredibles",
       "rating": "1",
       "id": 11,
-      "image":"../img/the-incredibles.jpg"
+      "image": "../img/the-incredibles.jpg"
     },
     {
       "title": "Masterminds",
@@ -41,10 +26,14 @@
     },
     {
       "title": "Big Hero 6",
-      "rating":"5",
+      "rating": "5",
       "id": 15,
       "image": "../img/big-hero-6.jpeg"
-
+    },
+    {
+      "title": "Jumanji",
+      "rating": "5",
+      "id": 16
     }
   ]
 }
