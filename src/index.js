@@ -20,8 +20,10 @@ var buttons = $(".delete").length
 function displayMovies(data) {
 
     for (var i = 0; i < data.length; i++) {
-        html += "<div><h1>" + data[i].title + "</h1>" + data[i].rating + "</div>"
-        $(".delete").val(i)
+        html += "<div class='card'>"+"<img src='' class='card-img-top' alt=''>" +
+            "<div class='card-body'>" +
+    "<h5 class='card-title'>" + data[i].title + "</h5><p class='card-text'><small class='text-muted'>" + data[i].rating + "</small></p></div></div>"
+
     }
     $("#movie").html(html)
 
@@ -42,7 +44,7 @@ function displayMovies(data) {
             html = ""
             getMoviesfunc() // call API Again to refresh list
     })
-    $("#edit").click(function (){
+    $("#edit").off().click(function (){
         let id = 0;
 
         let movie = {title: $("#movie-titles").val(), rating: $("#edit-rating").val()}
@@ -128,9 +130,6 @@ const select = (data) => {
     $("#movie-titles").html(movieOptions)
 
 }
-
-
-
 
 getMoviesfunc();
 
