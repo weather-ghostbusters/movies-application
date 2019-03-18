@@ -30,7 +30,7 @@ function displayMovies(data) {
 
 
     // deletes movies
-    $("h1").dblclick(function () {
+    $("h5").dblclick(function () {
         var check = alert("Would you like to delete the movie?")
         var id = 0;
         console.log(data);
@@ -73,8 +73,8 @@ function displayMovies(data) {
     return html
 }
 // adds movie to database
-$("#submit").click(function () {
-    let movie = {title: $("#name").val(), rating: $("#rating").val()}
+$("#submit").off().click(function () {
+    let movie = {title: $("#name").val(), rating: $("#rating").val(), image: "../img/Image-Coming-Soon.png"}
     const addMovie = {
         method: "POST",
         headers: {
@@ -82,6 +82,7 @@ $("#submit").click(function () {
         },
         body: JSON.stringify(movie)
     };
+    $(this).toggleClass('click');
     fetch("/api/movies", addMovie)
     html = ""
     setTimeout(function(){

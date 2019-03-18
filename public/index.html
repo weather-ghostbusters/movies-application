@@ -7,7 +7,18 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <!--<link rel="stylesheet" href="/style.css" />-->
     <style>
-
+        body, .card {
+            background: black;
+            font-color: white;
+        }
+        button {
+            width: 154px;
+            height: 29px;
+            margin: auto 20px 20px 20px;
+        }
+        h5, p {
+            color: white;
+        }
         .jumbotron{
             background-image: url('img/netflix.jpg');
             background-size: cover;
@@ -21,6 +32,15 @@
             margin: auto;
             margin-top: 5px;
         }
+        input, select {
+            margin: auto 20px 20px 20px;
+            width: 154px;
+            height: 29px;
+        }
+        .click {
+            background: red;
+        }
+
     </style>
 </head>
 <body>
@@ -40,7 +60,7 @@
         </div>
     </div>
 
-    <div id="movie" class="text-center"></div>
+    <div id="movie" class="card-columns text-center"></div>
 
 
     <div class="row">
@@ -49,11 +69,11 @@
 
             <div id="form">
                 <select id="edit-rating">
-                    <option value="1">⭐</option>
-                    <option value="2">⭐⭐</option>
-                    <option value="3">⭐⭐⭐</option>
-                    <option value="4">⭐⭐⭐⭐</option>
-                    <option value="5">⭐⭐⭐⭐⭐</option>
+                    <option value="⭐">⭐</option>
+                    <option value="⭐⭐">⭐⭐</option>
+                    <option value="⭐⭐⭐">⭐⭐⭐</option>
+                    <option value="⭐⭐⭐⭐">⭐⭐⭐⭐</option>
+                    <option value="⭐⭐⭐⭐⭐">⭐⭐⭐⭐⭐</option>
                 </select>
 
                 <select id="movie-titles">

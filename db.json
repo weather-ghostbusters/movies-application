@@ -2,38 +2,57 @@
   "movies": [
     {
       "title": "School of Rock",
-      "rating": "5",
+      "rating": "⭐⭐⭐⭐⭐",
       "id": 10,
       "image": "../img/school-of-rock.jpg"
     },
     {
       "title": "The Incredibles",
-      "rating": "1",
+      "rating": "⭐⭐⭐⭐⭐",
       "id": 11,
       "image": "../img/the-incredibles.jpg"
     },
     {
       "title": "Masterminds",
-      "rating": "1",
+      "rating": "⭐⭐⭐⭐⭐",
       "id": 12,
       "image": "../img/masterminds.jpg"
     },
     {
       "title": "Casablanca",
-      "rating": "1",
+      "rating": "⭐⭐⭐⭐⭐",
       "id": 13,
       "image": "../img/casablanca-movie-poster-1942-1010189508.jpg"
     },
     {
       "title": "Big Hero 6",
-      "rating": "5",
+      "rating": "⭐⭐⭐⭐⭐",
       "id": 15,
       "image": "../img/big-hero-6.jpeg"
     },
     {
-      "title": "Jumanji",
-      "rating": "5",
-      "id": 16
+      "title": "The Jungle Book",
+      "rating": "⭐⭐⭐⭐",
+      "image": "../img/jungle-book.jpg",
+      "id": 17
+    },
+    {
+      "title": "Indiana Jones",
+      "rating": "⭐⭐⭐⭐⭐",
+      "image": "../img/temple_of_doom.jpg",
+      "id": 18
+    },
+    {
+      "title": "Ghostbusters",
+      "rating": "⭐⭐⭐⭐⭐",
+      "image": "../img/ghostbusters.jpg",
+      "id": 19
+    },
+    {
+      "title": "Coco",
+      "rating": "⭐⭐⭐⭐⭐",
+      "image": "../img/coco.jpg",
+      "id": 19
     }
   ]
 }
