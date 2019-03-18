@@ -21,7 +21,7 @@ var buttons = $(".delete").length
 function displayMovies(data) {
 
     for (var i = 0; i < data.length; i++) {
-        html += "<div class='card'>"+"<img src='' class='card-img-top' alt=''>" +
+        html += "<div class='card'>"+"<img src= " + data[i].image + "  alt=''>" +
             "<div class='card-body'>" +
     "<h5 class='card-title'>" + data[i].title + "</h5><p class='card-text'><small class='text-muted'>" + data[i].rating + "</small></p></div></div>"
     }
