@@ -1,9 +1,5 @@
 const $ = require("jquery");
 
-var TheMovieDb = require('themoviedb');
-var api = new TheMovieDb('4128a2073fea17df96a911e65892a328');
-
-
 
 /**
  * es6 modules and imports
@@ -25,7 +21,8 @@ var buttons = $(".delete").length
 function displayMovies(data) {
 
     for (var i = 0; i < data.length; i++) {
-        html += "<div><h1>" + data[i].title + "</h1>" + data[i].rating + "</div>"
+        html += "<div class='card'>" + "<img alt = 'poster' src='" + data[i].image + "'/>"
+            + "<div class='card-body'><h5 class='card-title'>" + data[i].title + "<br></h5><small class='text-muted'>" + data[i].rating + "</small></div></div>"
         $(".delete").val(i)
     }
     $("#movie").html(html)
